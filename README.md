@@ -13,6 +13,7 @@
 
 ## About build
 
+- Since the other Repos for the Lenovo E490 are very outdated I released my own version.
 - Intel wifi card works with AirportItlwm.kext:
   - Follow this: https://openintelwireless.github.io
 
