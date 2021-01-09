@@ -9,7 +9,7 @@
 | :-------- | :------------------ | :------------- | :------------------ |
 | Processor | Intel Core i7-8565U | Graphics       | UHD Graphics 620    |
 | Memory    | 2666MHz 2x8GB  | OS Disk        | Crucial MX500 (SATA) (should work with M.2 SSD included with laptop) |
-| Audio     | Coxenant CX8070     | WiFi/Bluetooth | Intel Wireless AC9260(default card)|
+| Audio     | Conexant CX8070     | WiFi/Bluetooth | Intel Wireless AC9260(default card)|
 
 ## About build
 
