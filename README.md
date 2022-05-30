@@ -5,11 +5,11 @@
 
 ## System configuration
 
-| Model     | MacBookPro15,2      | Version        | Catalina 10.15.7/Big Sur 11.0.1      |
+| Model     | MacBookPro15,2      | Version        | Catalina 10.15.7/Big Sur 11.0.1/Monterey 12.3.1      |
 | :-------- | :------------------ | :------------- | :------------------ |
 | Processor | Intel Core i7-8565U | Graphics       | UHD Graphics 620    |
 | Memory    | 2666MHz 2x8GB  | OS Disk        | Crucial MX500 (SATA) (should work with M.2 SSD included with laptop) |
-| Audio     | Conexant CX8070     | WiFi/Bluetooth | Intel Wireless AC9260(default card)|
+| Audio     | Conexant CX8070     | WiFi/Bluetooth | Intel Wireless AC9260 (default card)|
 
 ## About build
 
@@ -25,9 +25,9 @@
 #### Not Working
 
 - Things that may never work:
-  - The Fn row functions except volume control
-  - DRM (for Netflix and AppleTV+)
-  - HDMI Port (USB-C works but no video output)
+  - The Fn row functions except volume + brightness control
+  - Mixed DRM (for AppleTV+, Netflix and Amazon Prime Video should work)
+  - ~~HDMI Port (USB-C works but no video output)~~ Works from Release 0.8.0!
 
 ## Installation
 
@@ -46,7 +46,6 @@
 - Go to the [releases](https://github.com/jamieernest/Lenovo-E490-Hackintosh/releases) and download the lastest version
 - Replace EFI folder in USB EFI partition with the EFI folder from the zip file
 - Go into config.plist with [ProperTree](https://github.com/corpnewt/ProperTree) and change the SystemProductName (Type), SystemSerialNumber (Serial), MLB (Board Serial) and SystemUUID (SmUUID) which is generated using [GenSMBIOS.](https://github.com/corpnewt/GenSMBIOS) (Press 1, then 3 then type MacBookPro15,2)
-- If the DSDT doesn't work (aka no boot) remove the DSDT from the ACPI folder and open config.plist with ProperTree and press Ctrl+Shift+R and select the OC Folder.
 - Boot into USB and select MacOS installer
 - In the installer open disk utility and format the SSD to APFS. <strong>YOU WILL LOSE ALL THE DATA THAT IS ON IT</strong> 
 - When you are booted in you need to mount EFI partition and replace it with USB's EFI using [Hackintool](https://github.com/headkaze/Hackintool/releases) or [MountEFI](https://github.com/corpnewt/MountEFI)
